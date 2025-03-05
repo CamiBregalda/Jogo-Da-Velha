@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initials-scale=1.0">
+
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <div id="escolha">
+            <div class="player" id="xPlayerDisplay" onclick="escolherPlayer('X')">
+                X
+            </div>
+            
+            <h3 id="titulo">Escolha um símbolo</h3>
+            
+            <div class="player" id="oPlayerDisplay" onclick="escolherPlayer('O')">
+                O
+            </div>
+        </div>
+
+        <div id="tabuleiro">
+            <div class="celula"></div>
+            <div class="celula"></div>
+            <div class="celula"></div>
+            <div class="celula"></div>
+            <div class="celula"></div>
+            <div class="celula"></div>
+            <div class="celula"></div>
+            <div class="celula"></div>
+            <div class="celula"></div>
+        </div>
+
+        <button id="iniciarBtn">
+            Iniciar
+        </button>
+
+        <button id="reiniciarBtn">
+            Reiniciar
+        </button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

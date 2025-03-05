@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    
+    color: white;
+}
+
+section {
+    background: #0A0519;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#escolha {
+    display: flex;
+    width: 265px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#escolha .player {
+    background: #17122A;
+    width: 80px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    border: solid 4px #17122A;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+#escolha .player:hover {
+    border: solid 4px #2A2343;
+}
+
+#escolha .player-active {
+    opacity: 1;
+    border: solid 4px #2A2343;
+}
+
+#escolha #xPlayerDisplay {
+    color: #1892EA;
+}
+
+#escolha #oPlayerDisplay {
+    color: #A737FF;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 12px;
+}
+
+#tabuleiro .celula {
+    background: #17122A;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s background;
+}
+
+#tabuleiro .celula:hover {
+    background: #2A2343;
+}
+
+#reiniciarBtn, #iniciarBtn {
+    margin-top: 30px;
+    width: 235px;
+    background: #17122A;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s background;
+    visibility: hidden;
+}
+
+#reiniciarBtn:hover, #iniciarBtn:hover {
+    background: #2A2343;
+}                                    
+
+#titulo {
+    text-align: center;
+}
